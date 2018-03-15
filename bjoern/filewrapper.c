@@ -58,7 +58,6 @@ FileWrapper_IterNext(PyObject* self)
   } else if (PyObject_IsTrue(data)) {
     return data;
   } else {
-    PyErr_SetNone(PyExc_IndexError);
     return NULL;
   }
 }
